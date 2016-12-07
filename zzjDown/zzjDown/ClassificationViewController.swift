@@ -11,7 +11,8 @@ import Alamofire
 import Kingfisher
 
 class ClassificationViewController: UITableViewController,navigationBarProtocol,AddReFreshProtocol {
-    var dataArray:[classifyModel] = []
+    
+    var categoryArray:[[classifyModel]] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,15 +35,18 @@ class ClassificationViewController: UITableViewController,navigationBarProtocol,
         Alamofire.request(.GET, classifyUrlString).responseJSON { [unowned self](response) in
             if response.result.error == nil {
                 let array = response.result.value as! [AnyObject]
+                
                 for array1 in array {
+                    var dataArray = [classifyModel]()
                     let array2 = array1["list"] as! [AnyObject]
                     for dic in array2 {
                         let model = classifyModel()
                         model.setValuesForKeysWithDictionary(dic as! [String : AnyObject])
-                        self.dataArray.append(model)
+                        dataArray.append(model)
                     }
-                    self.tableView.reloadData()
+                    self.categoryArray.append(dataArray)
                 }
+                self.tableView.reloadData()
             }
         }
     }
@@ -55,8 +59,8 @@ class ClassificationViewController: UITableViewController,navigationBarProtocol,
     // MARK: - Table view data source
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 2
+        return categoryArray.count
+        
     }
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -65,10 +69,17 @@ class ClassificationViewController: UITableViewController,navigationBarProtocol,
         }else{
             return "官方分类"
         }
+       
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dataArray.count
+        
+        if section == 0 {
+            return categoryArray[section].count
+        }else{
+            return categoryArray[section].count
+        }
+        
     }
     
     override func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -80,17 +91,20 @@ class ClassificationViewController: UITableViewController,navigationBarProtocol,
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! classifyViewCell
-        let model = dataArray[indexPath.row]
-        cell.appName.text = model.title
-        cell.appDetail.text = model.desc
-        cell.appIconImage.kf_setImageWithURL(NSURL(string: model.icon))
-        return cell
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? classifyViewCell
+        let model = categoryArray[indexPath.section][indexPath.row]
+        cell!.appName.text = model.title
+        cell!.appDetail.text = model.desc
+        if model.icon != nil {
+           cell?.appIconImage.kf_setImageWithURL(NSURL(string: model.icon), placeholderImage: UIImage(named: "defaultImage"), optionsInfo: nil, progressBlock: nil, completionHandler: nil)
+        }
+        
+        return cell!
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let vc = OrderViewController2()
-        let model = dataArray[indexPath.row]
+        let vc = TotalGamesViewController()
+        let model = categoryArray[indexPath.section][indexPath.row]
         vc.title = model.title
         navigationController?.pushViewController(vc, animated: true)
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)

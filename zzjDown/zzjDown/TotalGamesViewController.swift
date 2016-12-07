@@ -10,24 +10,49 @@ import UIKit
 import Alamofire
 import Kingfisher
 
-class TotalGamesViewController: UITableViewController,navigationBarProtocol,AddReFreshProtocol {
+class TotalGamesViewController: UITableViewController,navigationBarProtocol,AddReFreshProtocol,AddSegmentProtocol2 {
+    
     var dataArray:[HomePageModel] = []
+    
     var currentPage = 1
-
+    
+    var urlString:String? = allspecificUrlString
+    
+    var bgView:UIView?
+    
+    var segmented:UISegmentedControl?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         congfigUI()
-        loadData()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        loadData(urlString)
     }
-
-    func loadData() {
-        let ahomepageUrlString = String(format: allspecificUrlString, currentPage)
+    
+    //添加蒙层
+    func addBgMaskView() {
+        if bgView == nil {
+            bgView = UIView(frame: view.bounds)
+            bgView!.backgroundColor = UIColor.blackColor()
+            bgView!.alpha = 0.8
+        }
+        view.addSubview(bgView!)
+    }
+    
+    func addSegmented2(select:Selector) {
+        
+        if segmented == nil {
+            segmented = UISegmentedControl(items: ["全部","免费","限免","付费"])
+            segmented!.frame=CGRect(x: 40, y: 200, width: screenWidth-80, height: 40)
+            segmented!.addTarget(self, action: select, forControlEvents: .ValueChanged)
+            segmented!.momentary = false
+        }
+        bgView!.addSubview(segmented!)
+        
+    }
+    
+    func loadData(urlString:String?) {
+        
+        let ahomepageUrlString = String(format: urlString!, currentPage)
         Alamofire.request(.GET, ahomepageUrlString).responseJSON { [unowned self](response) in
             self.tableView.mj_header.endRefreshing()
             self.tableView.mj_footer.endRefreshing()
@@ -48,15 +73,58 @@ class TotalGamesViewController: UITableViewController,navigationBarProtocol,AddR
     }
     
     func congfigUI() {
-        addTitle("精品限时免费")
+        
+        addTitle(title!)
+        
+        addButton("返回", imageName: "backButton.png", position: .left, selector: #selector(leftButtonClick(_:)))
+        
+        addButton("全部", imageName: "navButton.png", position: .right, selector: #selector(rightButtonClick(_:)))
+        
         tableView.registerClass(HPViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        
         addRefresh({ [unowned self] in
             self.currentPage = 1
-            self.loadData()
+            self.loadData(self.urlString)
         }) { [unowned self] in
             self.currentPage += 1
-            self.loadData()
+            self.loadData(self.urlString)
         }
+    }
+    
+    func leftButtonClick(btn:UIButton) {
+        navigationController?.popViewControllerAnimated(true)
+    }
+    
+    func rightButtonClick(btn:UIButton) {
+        addBgMaskView()
+        addSegmented2(#selector(segmentClick(_:)))
+        self.tableView.scrollEnabled = false
+    }
+    
+    func segmentClick(segment:UISegmentedControl) {
+        
+        self.tableView.scrollEnabled = true
+        
+        switch segment.selectedSegmentIndex {
+        case 0:
+            loadData(urlString)
+            break
+        case 1:
+            urlString = freespecificUrlString
+            loadData(urlString)
+            break
+        case 2:
+            urlString = pricedropspecificUrlString
+            loadData(urlString)
+            break
+        case 3:
+            urlString = paidspecificUrlString
+            loadData(urlString)
+            break
+        default:
+            break
+        }
+        self.bgView?.removeFromSuperview()
     }
     
     override func didReceiveMemoryWarning() {

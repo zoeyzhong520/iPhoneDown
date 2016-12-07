@@ -9,7 +9,7 @@
 import UIKit
 
 class RecommendViewController: UITableViewController,navigationBarProtocol {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configUI()

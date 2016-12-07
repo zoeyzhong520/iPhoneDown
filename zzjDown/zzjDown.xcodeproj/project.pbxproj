@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0E23CF1DF802AA00414745 /* IDSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0E23CE1DF802AA00414745 /* IDSegmentControl.swift */; };
+		1E1599CE1DF82166005D8D00 /* HPAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1599CC1DF82166005D8D00 /* HPAdCell.swift */; };
+		1E1599CF1DF82166005D8D00 /* HPAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E1599CD1DF82166005D8D00 /* HPAdCell.xib */; };
+		1E1599D11DF833FF005D8D00 /* sdefaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E1599D01DF833FF005D8D00 /* sdefaultImage.png */; };
+		1E46304D1DF6ACDD00E4B6AB /* defaultImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E46304C1DF6ACDD00E4B6AB /* defaultImage.png */; };
 		BC71860F1DB06C2F005C3954 /* ThisWeekHotLimitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71860E1DB06C2F005C3954 /* ThisWeekHotLimitViewController.swift */; };
 		BC7186111DB06C7F005C3954 /* TotalHotLimitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7186101DB06C7F005C3954 /* TotalHotLimitViewController.swift */; };
 		BC7186131DB07153005C3954 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7186121DB07153005C3954 /* OrderViewController.swift */; };
@@ -14,10 +19,6 @@
 		BC7186191DB0864D005C3954 /* classifyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7186181DB0864D005C3954 /* classifyViewCell.swift */; };
 		BC71861B1DB0A458005C3954 /* TotalGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71861A1DB0A458005C3954 /* TotalGamesViewController.swift */; };
 		BC71861D1DB0B07B005C3954 /* addSegmentProtocol2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71861C1DB0B07B005C3954 /* addSegmentProtocol2.swift */; };
-		BC71861F1DB0B2BA005C3954 /* OrderViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71861E1DB0B2BA005C3954 /* OrderViewController2.swift */; };
-		BC7186211DB0B349005C3954 /* FreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7186201DB0B349005C3954 /* FreeViewController.swift */; };
-		BC7186251DB0B366005C3954 /* NeedPaidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7186241DB0B366005C3954 /* NeedPaidViewController.swift */; };
-		BC7186271DB0B377005C3954 /* LimitFreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7186261DB0B377005C3954 /* LimitFreeViewController.swift */; };
 		BCBB18501DAF675300CED421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB184F1DAF675300CED421 /* AppDelegate.swift */; };
 		BCBB18521DAF675300CED421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB18511DAF675300CED421 /* ViewController.swift */; };
 		BCBB18551DAF675300CED421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18531DAF675300CED421 /* Main.storyboard */; };
@@ -25,7 +26,6 @@
 		BCBB185A1DAF675300CED421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18581DAF675300CED421 /* LaunchScreen.storyboard */; };
 		BCBB19061DAF677100CED421 /* @i-gamecenter.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18631DAF677100CED421 /* @i-gamecenter.png */; };
 		BCBB19071DAF677100CED421 /* @i-gamecenter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18641DAF677100CED421 /* @i-gamecenter@2x.png */; };
-		BCBB19081DAF677100CED421 /* AppDown-iPhone in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18651DAF677100CED421 /* AppDown-iPhone */; };
 		BCBB19091DAF677100CED421 /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18661DAF677100CED421 /* backButton.png */; };
 		BCBB190A1DAF677100CED421 /* backButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18671DAF677100CED421 /* backButton@2x.png */; };
 		BCBB190B1DAF677100CED421 /* blackArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18681DAF677100CED421 /* blackArrow.png */; };
@@ -60,8 +60,6 @@
 		BCBB19281DAF677100CED421 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18851DAF677100CED421 /* Default-568h@2x.png */; };
 		BCBB19291DAF677100CED421 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18861DAF677100CED421 /* Default.png */; };
 		BCBB192A1DAF677100CED421 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18871DAF677100CED421 /* Default@2x.png */; };
-		BCBB192B1DAF677100CED421 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18881DAF677100CED421 /* InfoPlist.strings */; };
-		BCBB192C1DAF677100CED421 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BCBB188A1DAF677100CED421 /* Localizable.strings */; };
 		BCBB192D1DAF677100CED421 /* grayArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB188C1DAF677100CED421 /* grayArrow.png */; };
 		BCBB192E1DAF677100CED421 /* grayArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB188D1DAF677100CED421 /* grayArrow@2x.png */; };
 		BCBB192F1DAF677100CED421 /* i-button.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB188E1DAF677100CED421 /* i-button.png */; };
@@ -151,8 +149,6 @@
 		BCBB19831DAF677100CED421 /* ResourceRules.plist in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18E21DAF677100CED421 /* ResourceRules.plist */; };
 		BCBB19841DAF677100CED421 /* sad.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18E31DAF677100CED421 /* sad.png */; };
 		BCBB19851DAF677100CED421 /* sad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18E41DAF677100CED421 /* sad@2x.png */; };
-		BCBB19861DAF677100CED421 /* AppDown-iPhone.sinf in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18E61DAF677100CED421 /* AppDown-iPhone.sinf */; };
-		BCBB19871DAF677100CED421 /* AppDown-iPhone.supp in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18E71DAF677100CED421 /* AppDown-iPhone.supp */; };
 		BCBB19881DAF677100CED421 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18E81DAF677100CED421 /* share.png */; };
 		BCBB19891DAF677100CED421 /* share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18E91DAF677100CED421 /* share@2x.png */; };
 		BCBB198A1DAF677100CED421 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18EA1DAF677100CED421 /* smile.png */; };
@@ -203,6 +199,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E0E23CE1DF802AA00414745 /* IDSegmentControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDSegmentControl.swift; sourceTree = "<group>"; };
+		1E1599CC1DF82166005D8D00 /* HPAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HPAdCell.swift; sourceTree = "<group>"; };
+		1E1599CD1DF82166005D8D00 /* HPAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HPAdCell.xib; sourceTree = "<group>"; };
+		1E1599D01DF833FF005D8D00 /* sdefaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sdefaultImage.png; sourceTree = "<group>"; };
+		1E46304C1DF6ACDD00E4B6AB /* defaultImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultImage.png; sourceTree = "<group>"; };
 		204AE22944A2A47782FE5A6C /* Pods-zzjDown.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zzjDown.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zzjDown/Pods-zzjDown.debug.xcconfig"; sourceTree = "<group>"; };
 		27C0FB30609C1E66837B9106 /* Pods-zzjDown.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zzjDown.release.xcconfig"; path = "Pods/Target Support Files/Pods-zzjDown/Pods-zzjDown.release.xcconfig"; sourceTree = "<group>"; };
 		B13A48DF5C26C5FC625E5227 /* Pods_zzjDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zzjDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,10 +214,6 @@
 		BC7186181DB0864D005C3954 /* classifyViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classifyViewCell.swift; sourceTree = "<group>"; };
 		BC71861A1DB0A458005C3954 /* TotalGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalGamesViewController.swift; sourceTree = "<group>"; };
 		BC71861C1DB0B07B005C3954 /* addSegmentProtocol2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addSegmentProtocol2.swift; sourceTree = "<group>"; };
-		BC71861E1DB0B2BA005C3954 /* OrderViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderViewController2.swift; sourceTree = "<group>"; };
-		BC7186201DB0B349005C3954 /* FreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeViewController.swift; sourceTree = "<group>"; };
-		BC7186241DB0B366005C3954 /* NeedPaidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedPaidViewController.swift; sourceTree = "<group>"; };
-		BC7186261DB0B377005C3954 /* LimitFreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitFreeViewController.swift; sourceTree = "<group>"; };
 		BCBB184C1DAF675300CED421 /* zzjDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zzjDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBB184F1DAF675300CED421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBB18511DAF675300CED421 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -226,7 +223,6 @@
 		BCBB185B1DAF675400CED421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBB18631DAF677100CED421 /* @i-gamecenter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "@i-gamecenter.png"; sourceTree = "<group>"; };
 		BCBB18641DAF677100CED421 /* @i-gamecenter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "@i-gamecenter@2x.png"; sourceTree = "<group>"; };
-		BCBB18651DAF677100CED421 /* AppDown-iPhone */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "AppDown-iPhone"; sourceTree = "<group>"; };
 		BCBB18661DAF677100CED421 /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
 		BCBB18671DAF677100CED421 /* backButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@2x.png"; sourceTree = "<group>"; };
 		BCBB18681DAF677100CED421 /* blackArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackArrow.png; sourceTree = "<group>"; };
@@ -261,8 +257,6 @@
 		BCBB18851DAF677100CED421 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BCBB18861DAF677100CED421 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		BCBB18871DAF677100CED421 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		BCBB18891DAF677100CED421 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BCBB188B1DAF677100CED421 /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		BCBB188C1DAF677100CED421 /* grayArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grayArrow.png; sourceTree = "<group>"; };
 		BCBB188D1DAF677100CED421 /* grayArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "grayArrow@2x.png"; sourceTree = "<group>"; };
 		BCBB188E1DAF677100CED421 /* i-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i-button.png"; sourceTree = "<group>"; };
@@ -352,8 +346,6 @@
 		BCBB18E21DAF677100CED421 /* ResourceRules.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = ResourceRules.plist; sourceTree = "<group>"; };
 		BCBB18E31DAF677100CED421 /* sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sad.png; sourceTree = "<group>"; };
 		BCBB18E41DAF677100CED421 /* sad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sad@2x.png"; sourceTree = "<group>"; };
-		BCBB18E61DAF677100CED421 /* AppDown-iPhone.sinf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppDown-iPhone.sinf"; sourceTree = "<group>"; };
-		BCBB18E71DAF677100CED421 /* AppDown-iPhone.supp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppDown-iPhone.supp"; sourceTree = "<group>"; };
 		BCBB18E81DAF677100CED421 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		BCBB18E91DAF677100CED421 /* share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share@2x.png"; sourceTree = "<group>"; };
 		BCBB18EA1DAF677100CED421 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smile.png; sourceTree = "<group>"; };
@@ -443,6 +435,7 @@
 			isa = PBXGroup;
 			children = (
 				BC7186181DB0864D005C3954 /* classifyViewCell.swift */,
+				1E0E23CE1DF802AA00414745 /* IDSegmentControl.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -477,6 +470,8 @@
 				BCBB19A71DAF67D300CED421 /* TodayLimit */,
 				BCBB19A61DAF67A400CED421 /* HomePage */,
 				BCBB19A91DAF681B00CED421 /* Classification */,
+				BCBB184F1DAF675300CED421 /* AppDelegate.swift */,
+				BCBB18511DAF675300CED421 /* ViewController.swift */,
 				BCBB18531DAF675300CED421 /* Main.storyboard */,
 				BCBB18561DAF675300CED421 /* Assets.xcassets */,
 				BCBB18581DAF675300CED421 /* LaunchScreen.storyboard */,
@@ -496,9 +491,9 @@
 		BCBB18621DAF677100CED421 /* ipaDown */ = {
 			isa = PBXGroup;
 			children = (
+				1E46304C1DF6ACDD00E4B6AB /* defaultImage.png */,
 				BCBB18631DAF677100CED421 /* @i-gamecenter.png */,
 				BCBB18641DAF677100CED421 /* @i-gamecenter@2x.png */,
-				BCBB18651DAF677100CED421 /* AppDown-iPhone */,
 				BCBB18661DAF677100CED421 /* backButton.png */,
 				BCBB18671DAF677100CED421 /* backButton@2x.png */,
 				BCBB18681DAF677100CED421 /* blackArrow.png */,
@@ -512,6 +507,7 @@
 				BCBB18701DAF677100CED421 /* c-category.png */,
 				BCBB18711DAF677100CED421 /* c-category@2x.png */,
 				BCBB18721DAF677100CED421 /* c-down.png */,
+				1E1599D01DF833FF005D8D00 /* sdefaultImage.png */,
 				BCBB18731DAF677100CED421 /* c-down@2x.png */,
 				BCBB18741DAF677100CED421 /* c-guide.png */,
 				BCBB18751DAF677100CED421 /* c-guide@2x.png */,
@@ -533,8 +529,6 @@
 				BCBB18851DAF677100CED421 /* Default-568h@2x.png */,
 				BCBB18861DAF677100CED421 /* Default.png */,
 				BCBB18871DAF677100CED421 /* Default@2x.png */,
-				BCBB18881DAF677100CED421 /* InfoPlist.strings */,
-				BCBB188A1DAF677100CED421 /* Localizable.strings */,
 				BCBB188C1DAF677100CED421 /* grayArrow.png */,
 				BCBB188D1DAF677100CED421 /* grayArrow@2x.png */,
 				BCBB188E1DAF677100CED421 /* i-button.png */,
@@ -624,7 +618,6 @@
 				BCBB18E21DAF677100CED421 /* ResourceRules.plist */,
 				BCBB18E31DAF677100CED421 /* sad.png */,
 				BCBB18E41DAF677100CED421 /* sad@2x.png */,
-				BCBB18E51DAF677100CED421 /* SC_Info */,
 				BCBB18E81DAF677100CED421 /* share.png */,
 				BCBB18E91DAF677100CED421 /* share@2x.png */,
 				BCBB18EA1DAF677100CED421 /* smile.png */,
@@ -657,15 +650,6 @@
 				BCBB19051DAF677100CED421 /* zbar-back.png */,
 			);
 			path = ipaDown;
-			sourceTree = "<group>";
-		};
-		BCBB18E51DAF677100CED421 /* SC_Info */ = {
-			isa = PBXGroup;
-			children = (
-				BCBB18E61DAF677100CED421 /* AppDown-iPhone.sinf */,
-				BCBB18E71DAF677100CED421 /* AppDown-iPhone.supp */,
-			);
-			path = SC_Info;
 			sourceTree = "<group>";
 		};
 		BCBB19A61DAF67A400CED421 /* HomePage */ = {
@@ -717,8 +701,6 @@
 		BCBB19AC1DAF684900CED421 /* Public */ = {
 			isa = PBXGroup;
 			children = (
-				BCBB184F1DAF675300CED421 /* AppDelegate.swift */,
-				BCBB18511DAF675300CED421 /* ViewController.swift */,
 				BCBB19AD1DAF685000CED421 /* Other */,
 			);
 			name = Public;
@@ -766,12 +748,8 @@
 		BCBB19B81DAF6A5600CED421 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BC71861E1DB0B2BA005C3954 /* OrderViewController2.swift */,
 				BCBB19B91DAF6A6500CED421 /* ClassificationViewController.swift */,
 				BC71861A1DB0A458005C3954 /* TotalGamesViewController.swift */,
-				BC7186201DB0B349005C3954 /* FreeViewController.swift */,
-				BC7186261DB0B377005C3954 /* LimitFreeViewController.swift */,
-				BC7186241DB0B366005C3954 /* NeedPaidViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -813,6 +791,8 @@
 			isa = PBXGroup;
 			children = (
 				BCBB19D51DAFBD2400CED421 /* HPViewCell.swift */,
+				1E1599CC1DF82166005D8D00 /* HPAdCell.swift */,
+				1E1599CD1DF82166005D8D00 /* HPAdCell.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -912,16 +892,17 @@
 				BCBB19951DAF677100CED421 /* toolbar_more.png in Resources */,
 				BCBB19411DAF677100CED421 /* i-pic@2x.png in Resources */,
 				BCBB190E1DAF677100CED421 /* blueArrow@2x.png in Resources */,
+				1E1599D11DF833FF005D8D00 /* sdefaultImage.png in Resources */,
 				BCBB19A31DAF677100CED421 /* zbar-1.jpg in Resources */,
 				BCBB19231DAF677100CED421 /* c-zt.png in Resources */,
 				BCBB195A1DAF677100CED421 /* item_app_category@2x.png in Resources */,
 				BCBB19131DAF677100CED421 /* c-category.png in Resources */,
-				BCBB19861DAF677100CED421 /* AppDown-iPhone.sinf in Resources */,
 				BCBB198F1DAF677100CED421 /* toolbar_bookmark.png in Resources */,
 				BCBB19201DAF677100CED421 /* c-new@2x.png in Resources */,
 				BCBB19711DAF677100CED421 /* PkgInfo in Resources */,
 				BCBB19701DAF677100CED421 /* navButton@2x.png in Resources */,
 				BCBB19731DAF677100CED421 /* placeholder-ad@2x.png in Resources */,
+				1E1599CF1DF82166005D8D00 /* HPAdCell.xib in Resources */,
 				BCBB191D1DAF677100CED421 /* c-jc.png in Resources */,
 				BCBB19571DAF677100CED421 /* iphone.client.css in Resources */,
 				BCBB19651DAF677100CED421 /* item_app_pricedrop.png in Resources */,
@@ -951,7 +932,6 @@
 				BCBB19751DAF677100CED421 /* placeholder-guide@2x.png in Resources */,
 				BCBB196C1DAF677100CED421 /* logo.png in Resources */,
 				BCBB19591DAF677100CED421 /* item_app_category.png in Resources */,
-				BCBB19871DAF677100CED421 /* AppDown-iPhone.supp in Resources */,
 				BCBB19091DAF677100CED421 /* backButton.png in Resources */,
 				BCBB19431DAF677100CED421 /* i-qqgroup@2x.png in Resources */,
 				BCBB19341DAF677100CED421 /* i-download@2x.png in Resources */,
@@ -1006,6 +986,7 @@
 				BCBB19A01DAF677100CED421 /* u@2x.png in Resources */,
 				BCBB191B1DAF677100CED421 /* c-hotusers.png in Resources */,
 				BCBB19541DAF677100CED421 /* Info.plist in Resources */,
+				1E46304D1DF6ACDD00E4B6AB /* defaultImage.png in Resources */,
 				BCBB193B1DAF677100CED421 /* i-ipadown@2x.png in Resources */,
 				BCBB19941DAF677100CED421 /* toolbar_index.png in Resources */,
 				BCBB19451DAF677100CED421 /* i-random@2x.png in Resources */,
@@ -1016,13 +997,11 @@
 				BCBB19371DAF677100CED421 /* i-game.png in Resources */,
 				BCBB19851DAF677100CED421 /* sad@2x.png in Resources */,
 				BCBB190D1DAF677100CED421 /* blueArrow.png in Resources */,
-				BCBB192B1DAF677100CED421 /* InfoPlist.strings in Resources */,
 				BCBB19681DAF677100CED421 /* jc.png in Resources */,
 				BCBB19A21DAF677100CED421 /* whiteArrow@2x.png in Resources */,
 				BCBB19161DAF677100CED421 /* c-down@2x.png in Resources */,
 				BCBB19641DAF677100CED421 /* item_app_new@2x.png in Resources */,
 				BCBB199F1DAF677100CED421 /* top-bg@2x.png in Resources */,
-				BCBB192C1DAF677100CED421 /* Localizable.strings in Resources */,
 				BCBB19601DAF677100CED421 /* item_app_more@2x.png in Resources */,
 				BCBB195C1DAF677100CED421 /* item_app_home@2x.png in Resources */,
 				BCBB19271DAF677100CED421 /* commendBG@2x.png in Resources */,
@@ -1050,7 +1029,6 @@
 				BCBB198A1DAF677100CED421 /* smile.png in Resources */,
 				BCBB191A1DAF677100CED421 /* c-hotapps@2x.png in Resources */,
 				BCBB190C1DAF677100CED421 /* blackArrow@2x.png in Resources */,
-				BCBB19081DAF677100CED421 /* AppDown-iPhone in Resources */,
 				BCBB19621DAF677100CED421 /* item_app_myapps@2x.png in Resources */,
 				BCBB19821DAF677100CED421 /* qrcode.png in Resources */,
 				BCBB19111DAF677100CED421 /* c-bookmark.png in Resources */,
@@ -1106,7 +1084,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1133,16 +1111,14 @@
 				BCBB19B01DAF692400CED421 /* CreatTabBar.swift in Sources */,
 				BC7186161DB0836C005C3954 /* classifyModel.swift in Sources */,
 				BCBB19DA1DAFC57F00CED421 /* addReFreshProtocol.swift in Sources */,
-				BC7186211DB0B349005C3954 /* FreeViewController.swift in Sources */,
 				BCBB19C01DAF6A8E00CED421 /* MoreViewController.swift in Sources */,
-				BC7186271DB0B377005C3954 /* LimitFreeViewController.swift in Sources */,
 				BC71861B1DB0A458005C3954 /* TotalGamesViewController.swift in Sources */,
 				BCBB19B61DAF6A3000CED421 /* TodayLimitViewController.swift in Sources */,
-				BC71861F1DB0B2BA005C3954 /* OrderViewController2.swift in Sources */,
-				BC7186251DB0B366005C3954 /* NeedPaidViewController.swift in Sources */,
+				1E0E23CF1DF802AA00414745 /* IDSegmentControl.swift in Sources */,
 				BCBB19C91DAF79B900CED421 /* HomePageModel.swift in Sources */,
 				BC7186131DB07153005C3954 /* OrderViewController.swift in Sources */,
 				BCBB18501DAF675300CED421 /* AppDelegate.swift in Sources */,
+				1E1599CE1DF82166005D8D00 /* HPAdCell.swift in Sources */,
 				BCBB19DE1DAFD0EE00CED421 /* TodayLimitViewCell.swift in Sources */,
 				BCBB19C51DAF743200CED421 /* UIColor+Extension.swift in Sources */,
 			);
@@ -1165,22 +1141,6 @@
 				BCBB18591DAF675300CED421 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		BCBB18881DAF677100CED421 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCBB18891DAF677100CED421 /* English */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		BCBB188A1DAF677100CED421 /* Localizable.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCBB188B1DAF677100CED421 /* English */,
-			);
-			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
