@@ -22,7 +22,6 @@ class OrderViewController: UIViewController,AddSegmentedProtocol,navigationBarPr
     }
     
     func configUI() {
-        automaticallyAdjustsScrollViewInsets = false
         addTitle("")
         addSegmented(#selector(segmentClick(_:)))
     }

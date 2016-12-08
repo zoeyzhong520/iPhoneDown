@@ -18,17 +18,11 @@ class TodayLimitViewController: UITableViewController,navigationBarProtocol,AddR
         super.viewDidLoad()
         configUI()
         loadData()
-        
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     func configUI() {
         tableView.registerClass(TodayLimitViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        
         addRefresh({ [unowned self] in
             self.currentPage = 1
             self.loadData()

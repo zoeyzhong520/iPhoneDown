@@ -19,6 +19,8 @@ class HomePageViewController: UITableViewController,navigationBarProtocol,AddReF
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor.whiteColor()
+        
         congfigUI()
         
         loadData()
@@ -62,8 +64,11 @@ class HomePageViewController: UITableViewController,navigationBarProtocol,AddReF
     }
     
     func congfigUI() {
-        addTitle("精品限时免费")
+        
         tableView.registerClass(HPViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        
+        addTitle("精品限时免费")
+        
         addRefresh({ [unowned self] in
             self.currentPage = 1
             self.loadData()

@@ -25,17 +25,24 @@ class TotalGamesViewController: UITableViewController,navigationBarProtocol,AddR
     override func viewDidLoad() {
         super.viewDidLoad()
         congfigUI()
+        
+        //下载数据
         loadData(urlString)
+        loadData(freespecificUrlString)
+        loadData(pricedropspecificUrlString)
+        loadData(paidspecificUrlString)
+        
     }
     
     //添加蒙层
     func addBgMaskView() {
         if bgView == nil {
-            bgView = UIView(frame: view.bounds)
+            bgView = UIView(frame: CGRect(x: 0, y: 64, width: screenWidth, height: screenHeight-64))
             bgView!.backgroundColor = UIColor.blackColor()
             bgView!.alpha = 0.8
         }
-        view.addSubview(bgView!)
+        UIApplication.sharedApplication().keyWindow?.addSubview(bgView!)
+        //view.addSubview(bgView!)
     }
     
     func addSegmented2(select:Selector) {

@@ -21,13 +21,15 @@ protocol navigationBarProtocol:NSObjectProtocol {
 
 extension navigationBarProtocol where Self:UIViewController {
     func addTitle(title:String) {
-        navigationController?.navigationBar.setBackgroundImage(UIImage(named: "top-bg.png"), forBarMetrics: .Default)
+        
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 44))
         label.font = UIFont.boldSystemFontOfSize(fontLevelOne)
         label.textColor = colorTitle
         label.textAlignment = .Center
         label.text = title
         navigationItem.titleView = label
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "top-bg"), forBarMetrics: .Default)
     }
     
     func addButton(title: String?=nil,imageName:String?=nil,position:BarButtonPosition?=nil,selector:Selector) {
