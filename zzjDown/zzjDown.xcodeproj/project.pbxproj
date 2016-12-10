@@ -18,7 +18,6 @@
 		BC7186161DB0836C005C3954 /* classifyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7186151DB0836C005C3954 /* classifyModel.swift */; };
 		BC7186191DB0864D005C3954 /* classifyViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7186181DB0864D005C3954 /* classifyViewCell.swift */; };
 		BC71861B1DB0A458005C3954 /* TotalGamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71861A1DB0A458005C3954 /* TotalGamesViewController.swift */; };
-		BC71861D1DB0B07B005C3954 /* addSegmentProtocol2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC71861C1DB0B07B005C3954 /* addSegmentProtocol2.swift */; };
 		BCBB18501DAF675300CED421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB184F1DAF675300CED421 /* AppDelegate.swift */; };
 		BCBB18521DAF675300CED421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB18511DAF675300CED421 /* ViewController.swift */; };
 		BCBB18551DAF675300CED421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBB18531DAF675300CED421 /* Main.storyboard */; };
@@ -213,7 +212,6 @@
 		BC7186151DB0836C005C3954 /* classifyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classifyModel.swift; sourceTree = "<group>"; };
 		BC7186181DB0864D005C3954 /* classifyViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = classifyViewCell.swift; sourceTree = "<group>"; };
 		BC71861A1DB0A458005C3954 /* TotalGamesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TotalGamesViewController.swift; sourceTree = "<group>"; };
-		BC71861C1DB0B07B005C3954 /* addSegmentProtocol2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = addSegmentProtocol2.swift; sourceTree = "<group>"; };
 		BCBB184C1DAF675300CED421 /* zzjDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zzjDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBB184F1DAF675300CED421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCBB18511DAF675300CED421 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -721,7 +719,6 @@
 				BCBB19C11DAF73DD00CED421 /* navigationBarProtocol.swift */,
 				BCBB19D91DAFC57F00CED421 /* addReFreshProtocol.swift */,
 				BCBB19E11DAFD69000CED421 /* addSegmentedProtocol.swift */,
-				BC71861C1DB0B07B005C3954 /* addSegmentProtocol2.swift */,
 			);
 			name = Protocol;
 			sourceTree = "<group>";
@@ -1099,7 +1096,6 @@
 				BC71860F1DB06C2F005C3954 /* ThisWeekHotLimitViewController.swift in Sources */,
 				BCBB18521DAF675300CED421 /* ViewController.swift in Sources */,
 				BCBB19D01DAFA94A00CED421 /* adModel.swift in Sources */,
-				BC71861D1DB0B07B005C3954 /* addSegmentProtocol2.swift in Sources */,
 				BC7186191DB0864D005C3954 /* classifyViewCell.swift in Sources */,
 				BCBB19C21DAF73DD00CED421 /* navigationBarProtocol.swift in Sources */,
 				BCBB19D61DAFBD2400CED421 /* HPViewCell.swift in Sources */,

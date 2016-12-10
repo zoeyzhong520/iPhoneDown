@@ -23,19 +23,21 @@ extension navigationBarProtocol where Self:UIViewController {
     func addTitle(title:String) {
         
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 100, height: 44))
-        label.font = UIFont.boldSystemFontOfSize(fontLevelOne)
-        label.textColor = colorTitle
+        label.font = UIFont.boldSystemFontOfSize(fontLevelThree)
+        //label.textColor = colorTitle
         label.textAlignment = .Center
         label.text = title
         navigationItem.titleView = label
         
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "top-bg"), forBarMetrics: .Default)
+        //self.navigationController?.navigationBar.setBackgroundImage(UIImage(named: "top-bg"), forBarMetrics: .Default)
     }
     
     func addButton(title: String?=nil,imageName:String?=nil,position:BarButtonPosition?=nil,selector:Selector) {
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: 60, height: 30))
         if title != nil {
             button.setTitle(title, forState: .Normal)
+            button.setTitleColor(UIColor.blueColor(), forState: .Normal)
+            button.setTitleColor(UIColor.blackColor(), forState: .Highlighted)
         }
         if imageName != nil {
             button.setBackgroundImage(UIImage(named: imageName!), forState: .Normal)

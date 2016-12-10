@@ -65,7 +65,7 @@ class TodayLimitViewCell: UITableViewCell {
         contentView.addSubview(priceBGImageView)
         priceBGImageView.snp_makeConstraints { (make) in
             make.centerY.equalTo(appSome.snp_centerY)
-            make.width.equalTo(40)
+            make.size.equalTo(CGSizeMake(30, 30))
             make.right.equalTo(contentView.snp_right).offset(-20)
         }
     }

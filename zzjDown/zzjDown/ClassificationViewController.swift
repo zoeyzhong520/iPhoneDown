@@ -93,8 +93,8 @@ class ClassificationViewController: UITableViewController,navigationBarProtocol,
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? classifyViewCell
         let model = categoryArray[indexPath.section][indexPath.row]
-        cell!.appName.text = model.title
-        cell!.appDetail.text = model.desc
+        cell?.appName.text = model.title
+        cell?.appDetail.text = model.desc
         if model.icon != nil {
            cell?.appIconImage.kf_setImageWithURL(NSURL(string: model.icon), placeholderImage: UIImage(named: "defaultImage"), optionsInfo: nil, progressBlock: nil, completionHandler: nil)
         }
@@ -106,6 +106,7 @@ class ClassificationViewController: UITableViewController,navigationBarProtocol,
         let vc = TotalGamesViewController()
         let model = categoryArray[indexPath.section][indexPath.row]
         vc.title = model.title
+        
         navigationController?.pushViewController(vc, animated: true)
         self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }

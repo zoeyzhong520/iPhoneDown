@@ -22,7 +22,6 @@ class OrderViewController: UIViewController,AddSegmentedProtocol,navigationBarPr
     }
     
     func configUI() {
-        addTitle("")
         addSegmented(#selector(segmentClick(_:)))
     }
     
@@ -36,17 +35,21 @@ class OrderViewController: UIViewController,AddSegmentedProtocol,navigationBarPr
     func orderViewControll() {
         let sW = self.view.frame.size.width
         let sH = self.view.frame.size.height
+        
         let VC1 = TodayLimitViewController()
         VC1.view.frame = CGRect(x: 0, y: 0, width: sW, height: sH)
         self.view.addSubview(VC1.view)
         self.addChildViewController(VC1)
+        
         currentVC = VC1
         ChildVCS.append(VC1)
+        
         let VC2 = ThisWeekHotLimitViewController()
-        VC2.view.frame = CGRect(x: 0, y: 0, width: sW, height: sH)
+        VC2.view.frame = CGRect(x: 0, y: 64, width: sW, height: sH-64)
         ChildVCS.append(VC2)
+        
         let VC3 = TotalHotLimitViewController()
-        VC3.view.frame = CGRect(x: 0, y: 0, width: sW, height: sH)
+        VC3.view.frame = CGRect(x: 0, y: 64, width: sW, height: sH-64)
         ChildVCS.append(VC3)
     }
     

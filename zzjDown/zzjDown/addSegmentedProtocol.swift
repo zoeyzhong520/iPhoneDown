@@ -21,9 +21,7 @@ extension AddSegmentedProtocol where Self:UIViewController {
                                                 atIndex: 1, animated: true)
         segmentedControl.insertSegmentWithTitle("热门限免总榜", atIndex: 2, animated: true)
         segmentedControl.addTarget(self, action: select, forControlEvents: .ValueChanged)
-        segmentedControl.momentary = true
-        segmentedControl.multipleTouchEnabled = true
-        segmentedControl.reloadInputViews()
+        
         navigationItem.titleView = segmentedControl
     }
     

@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import Kingfisher
 
-class TotalGamesViewController: UITableViewController,navigationBarProtocol,AddReFreshProtocol,AddSegmentProtocol2 {
+class TotalGamesViewController: UITableViewController,navigationBarProtocol,AddReFreshProtocol,UIGestureRecognizerDelegate {
     
     var dataArray:[HomePageModel] = []
     
@@ -24,6 +24,10 @@ class TotalGamesViewController: UITableViewController,navigationBarProtocol,AddR
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //恢复滑动返回手势
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        
         congfigUI()
         
         //下载数据
@@ -83,9 +87,9 @@ class TotalGamesViewController: UITableViewController,navigationBarProtocol,AddR
         
         addTitle(title!)
         
-        addButton("返回", imageName: "backButton.png", position: .left, selector: #selector(leftButtonClick(_:)))
+        addButton("返回", position: .left, selector: #selector(leftButtonClick(_:)))
         
-        addButton("全部", imageName: "navButton.png", position: .right, selector: #selector(rightButtonClick(_:)))
+        addButton("全部", position: .right, selector: #selector(rightButtonClick(_:)))
         
         tableView.registerClass(HPViewCell.classForCoder(), forCellReuseIdentifier: "cell")
         
@@ -168,50 +172,22 @@ class TotalGamesViewController: UITableViewController,navigationBarProtocol,AddR
         return cell
     }
 
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
